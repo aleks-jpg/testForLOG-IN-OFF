@@ -9,6 +9,8 @@
 </head>
 <body>
 <header>header</header>
+<br>
+<?='Число заходов на сайт(image.php) = ' . $_SESSION['counter']?>
 <p><a href="image.php">Посмотреть изображение</a></p><br>
 <a href="calc.php">Перейти в калькулятор</a> <br>
 <footer>footer</footer>

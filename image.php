@@ -1,10 +1,12 @@
 <?php
+session_start();
 $counter = isset($_COOKIE['counter']) ? $_COOKIE['counter'] : 0;
 if ($counter != 0){
     $note = 'Число заходов на сайт = ' . $counter;
 }else{
     $note = 'Вы первый раз на странице';
 }
+$_SESSION['counter'] = $counter;
 $counter++;
 setcookie('counter', $counter, time() + 3600);
 
